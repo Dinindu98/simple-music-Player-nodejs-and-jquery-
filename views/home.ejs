@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <% for(var i = 0; data.length > i;i++){ %>
+        <h2>song <%= data[i].name %></h2>
+        <h2>artist <%= data[i].artist %></h2>
+        <audio controls>
+            <source src="<%= data[i].url %>" type="audio/mp3">
+                audio not support
+          </audio>
+    <% } %> -->
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script >
+        $(document).ready(function(){
+            console.log('hewe');
+        $(function (){
+        console.log("HELLO");
+        $.ajax({
+        url:'/',
+        type:'GET',
+        success:function(index,data,data1){
+            console.log(index);
+        }
+        }
+    );
+
+    
+});
+});
+    </script>
+</body>
+</html>
